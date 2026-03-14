@@ -122,11 +122,11 @@ const skillsSection = {
 
 // Education Section
 const educationInfo = {
-  display: true, 
+  display: true,
   schools: [
     {
       schoolName: "Mehran University of Engineering and Technology",
-      logo: require("./assets/images/muetLogo.png"), 
+      logo: require("./assets/images/muetLogo.png"),
       subHeader: "Bachelor of Engineering in Computer Systems Engineering",
       duration: "November 2021 - November 2025",
       desc: "Graduated with a CGPA of 3.61/4.",
@@ -168,19 +168,24 @@ const workExperiences = {
   experience: [
     {
       role: "Mobile App Developer",
-      company: "Gexton",
+      company: "GEXTON INC",
       companylogo: require("./assets/images/gextonLogo.png"), // ADD A LOGO TO src/assets/images
       date: "February 2026 – Present",
-      desc: "Developing cross-platform mobile applications and building an AI-integrated WhatsApp chatbot for student query management."
+      desc: "Developing cross-platform mobile applications along with Node.js backend services and seamless API integration.",
+      descBullets: [
+        "Collaborating with technical leads and executive stakeholders to deliver scalable software solutions.",
+        "Implementing clean architecture and maintaining high-performance codebases across the full stack."
+      ]
     },
     {
       role: "React Native Intern",
       company: "Chaloo Technologies Pvt Limited",
       companylogo: require("./assets/images/chalooLogo.png"), // ADD A LOGO TO src/assets/images
       date: "October 2025 – November 2025",
-      desc: "Developed an E-bike rental booking flow, integrated payment gateways, and implemented an in-app chatbot using real-time APIs.",
+      desc: "Developing cross-platform mobile apps and Node.js backend services.",
       descBullets: [
-        "Built a client-side notification read-status system to reduce backend dependency."
+        "Collaborating with leadership to deliver scalable, high-performance software.",
+        "Maintaining clean architecture and robust API integrations across the stack."
       ]
     },
     {
@@ -214,13 +219,13 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "SOME MAJOR APPS AND SYSTEMS I HAVE BUILT",
+  subtitle: "APPS AND SYSTEMS I HAVE BUILT",
   projects: [
     {
       image: require("./assets/images/spotlessLogo.png"), // ADD A LOGO TO src/assets/images
       projectName: "Spotless Laundry",
       projectDesc:
-        "An On-Demand Laundry App for a Dubai-based client featuring Stripe payments and Google Maps-based geocoding.",
+        "An On-Demand Laundry App featuring Stripe payments and Google Maps-based geocoding.",
       footerLink: [
         {
           name: "Play Store",
@@ -247,20 +252,20 @@ const bigProjects = {
         "A real-time medicine verification system using a two-stage Computer Vision pipeline integrated with a Flutter app via FastAPI.",
       footerLink: [
         {
-          name: "GitHub Repo",
+          name: "GitHub",
           url: "https://github.com/hammadak03/truemed_app"
         }
       ]
     },
     {
-      image: require("./assets/images/hairaiLogo.png"), // ADD A LOGO TO src/assets/images
-      projectName: "Hair AI App",
+      image: require("./assets/images/noorLogo.png"), // ADD A LOGO TO src/assets/images
+      projectName: "Noor: Ramadan App",
       projectDesc:
-        "A mobile application utilizing AI to recommend products based on hair condition and scalp images.",
+        "A complete, Islamic companion featuring precise location-based prayer times, a GPS Qibla compass, Quran reading, and authentic Hadith collections.",
       footerLink: [
         {
-          name: "In Development",
-          url: "#"
+          name: "Play Store",
+          url: "https://play.google.com/store/apps/details?id=com.ramazan_app" // Replace with the actual Google Play link once approved
         }
       ]
     }
@@ -275,15 +280,15 @@ const achievementSection = {
   subtitle: "Recognitions and certifications from my development journey.",
   achievementsCards: [
     {
-      title: "Top Fellow",
+      title: "Bytewise Fellowship",
       subtitle:
-        "Recognized for outstanding performance in the Bytewise Limited advanced Flutter fellowship.",
-      image: require("./assets/images/bytewiseLogo.png"), // ADD A LOGO TO src/assets/images
+        "Completed an intensive advanced Flutter fellowship. Awarded the 'Top Fellow' achievement for outstanding performance and project delivery.",
+      image: require("./assets/images/bytewiseLogo.png"),
       imageAlt: "Bytewise Logo",
       footerLink: [
         {
-          name: "View Profile",
-          url: "https://linkedin.com/in/hammadak03"
+          name: "View Certificate",
+          url: "https://verification.givemycertificate.com/v/31fa84a9-6629-4e19-b0f0-742f86f5763a"
         }
       ]
     },
@@ -293,7 +298,12 @@ const achievementSection = {
         "Led a beginner-friendly session teaching the fundamentals of Flutter and Dart.",
       image: require("./assets/images/flutterLogo.png"), // ADD A LOGO TO src/assets/images
       imageAlt: "Flutter Logo",
-      footerLink: []
+      footerLink: [
+        {
+          name: "Show Post",
+          url: "https://www.linkedin.com/posts/hammadak03_flutter101-flutterworkshop-mobileappdevelopment-activity-7322263597714145280-AJnZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE0fd8ABg0oZQZ5JSIdgeL8GxCFa_-YGZCM"
+        }
+      ]
     }
   ],
   display: true
@@ -336,8 +346,7 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My inbox is open.",
+  subtitle: "Discuss a project or just want to say hi? My inbox is open.",
   number: "+92 317 9772255",
   email_address: "hammadak350@gmail.com"
 };
